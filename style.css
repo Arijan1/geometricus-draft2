@@ -1,0 +1,176 @@
+:root {
+  --primary-color: #ffc000;
+  --secondary-color: rgb(172, 46, 70);
+  --overlay-color: #ffc000;
+  --light-color: #f3f3f3;
+  --white-color: #ffffff;
+  --black-color: #000;
+  --dark-color: #333;
+  --darkishlightcolor: rgb(77, 77, 77);
+  --max-width: 1300px;
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+  --primary-font: "Blinker", Arial, sans-serif;
+  --secondary-font: "Saira", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+}
+p,
+span,
+a,
+li {
+  font-family: var(--secondary-font);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--black-color);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+
+/*NAVIGATION */
+
+.nav-link {
+  color: var(--white-color);
+}
+.nav-link:hover {
+  color: var(--primary-color);
+}
+/*responzivni logo da stane hamburger kraj njega */
+.navbar-brand img {
+  max-height: 70px;
+  max-width: 100%;
+}
+@media (max-width: 400px) {
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}
+
+/*OVERLAY za mobilnu navigaciju*/
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  visibility: hidden;
+  transition: 0.2s;
+  backdrop-filter: blur(10px);
+}
+.overlay-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*MOBILNA NAV LISTA*/
+
+#navigationLista {
+  flex-direction: column;
+  display: none;
+  width: auto;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  font-size: 1.6rem;
+  list-style-type: none;
+  gap: 1em;
+  color: #000;
+  position: fixed;
+  padding-inline: 100px;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+}
+#navigationLista a {
+  color: var(--black-color);
+}
+.menu-btn,
+.close-btn {
+  z-index: 10001; /* da budu iznad liste*/
+  display: none;
+}
+.close-btn {
+  position: fixed; /* Da se X button mice s navigacijom pri skrolanju */
+  right: 0;
+}
+.close-btn i {
+  color: var(--black-color);
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+/*USLUGE BG IMAGE*/
+
+.space-background-image {
+  background-image: url("image/space-background-image.png"),
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+/* LEICA GEOSYSTEMS BG */
+
+.leica-bg {
+  background-image: url("image/leica-geosystems-bg.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: 60% 40%;
+}
+
+/*H2 od Leica Geosystems, pisano u custom cssu zbog manjka mogucnosti s klasama */
+.leica-naslov {
+  width: 50%;
+}
+@media (max-width: 768px) {
+
+  .leica-naslov {
+    width: 90%;
+  }
+}
+
+
+
+
+/*H2 od dropdown slidera */
+.slider-naslov {
+  font-size: 2.5rem;
+}
+@media (max-width: 992px) {
+
+  .slider-naslov{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+
+  .slider-naslov{
+    font-size: 1.2rem;
+  }
+}
