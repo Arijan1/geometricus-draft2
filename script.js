@@ -1,7 +1,7 @@
 
 
 var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1e3,
+    speed: 1e2,
     speedAsDuration: !0,
   });
 
@@ -24,7 +24,4 @@ function zatvaranje() {
 }
 menuBtn.addEventListener("click", pokazivanje),
   closeBtn.addEventListener("click", zatvaranje);
-var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1e3,
-  speedAsDuration: !0,
-});
+

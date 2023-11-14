@@ -41,27 +41,41 @@
     <nav class="container-md navbar navbar-expand-md mx-auto justify-content-between">
         <a id="nav-logo" class="navbar-brand" href="#"><img src="image/geometricus-logo-transparent-white.png"
                 alt="Logo" /></a>
-        <div class="text-uppercase d-none d-md-block">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Projekti</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Novosti</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Kontakt</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">HR
-                        <img src="image/croatia-flag.png" alt="Croatia Flag" style="max-height: 20px" /></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ENG
-                        <img src="image/england-flag.png" alt="UK Flag" style="max-height: 20px" /></a>
-                </li>
-            </ul>
-        </div>
+                <div class="text-uppercase d-none d-md-block">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Usluge</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projekti
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+                                <a class="dropdown-item" href="#">HydroGraphBoost</a>
+                                <a class="dropdown-item" href="#">SpatialSuperVision</a>
+                                <a class="dropdown-item" href="#">KK.08.2.1.16.0149</a>
+                            </div>
+                        </li>
+                
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Novosti</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">HR
+                                <img src="image/croatia-flag.png" alt="Hrvatska Zastava" style="max-height: 20px" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ENG
+                                <img src="image/england-flag.png" alt="UK Zastava" style="max-height: 20px" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
         <div class="menu-btn fs-1 mx-3 mx-sm-5">
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -70,9 +84,19 @@
         </div>
 
         <ul id="navigationLista">
-            <li><a href="#">Projekti</a></li>
+            <li><a href="#">Usluge</a></li>
+            <li class="dropdown" data-bs-theme="dark">
+                <a class="dropdown-toggle" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projekti
+                </a>
+                <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+                    <a class="dropdown-item text-light" href="#">HydroGraphBoost</a>
+                    <a class="dropdown-item text-light" href="#">SpatialSuperVision</a>
+                    <a class="dropdown-item text-light" href="#">KK.08.2.1.16.0149</a>
+                </div>
+            </li>
             <li><a href="#">Novosti</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
             <li>
                 <a href="#">HR
                     <img src="image/croatia-flag.png" alt="Croatia Flag" style="max-height: 20px" /></a>
@@ -98,7 +122,7 @@
                 </p>
             </div>
             <div class="col">
-                <img src="image/drone-image.png" alt="Image of a drone" class="w-100" />
+                <img src="image/air2-png-8bit.webp" alt="Image of a drone" class="w-100" />
             </div>
         </div>
 
@@ -276,7 +300,7 @@
 
 
 
-        <div class="container-md mt-7 contact">
+        <div class="container-md mt-7 contact" id="kontakt">
             <div class="text-center mx-auto" data-wow-delay=".3s"
                 style="max-width: 600px; visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
                 <h2 class="mb-3 text-primary fw-semibold">Kontaktirajte nas</h2>
