@@ -175,3 +175,13 @@ body {
   }
 }
 
+
+
+/*SPLIDE ARROW CUSTOM CSS*/
+
+.splide__arrow--next{
+  right: -5em !important;
+}
+.splide__arrow--prev{
+  left: -5em !important;
+}
