@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/32c0f3b9ec.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+    <!--META TAGS-->
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta name="description"
+        content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika. Geodet - Požega, Zagreb.">
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Geometricus d.o.o - geodetske usluge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://geometricus.hr/" />
+    <meta property="og:image" content="" /> <!--TREBA DODAT KAD SE UPLOADA-->
+    <meta property="og:description"
+        content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika. Geodet - Požega, Zagreb.">
+    <!--Twitter card oznake, treba dodat kad se uploada + ako se bude radio Twitter nekad u buducnosti-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Geometricus d.o.o - geodetske usluge">
+    <meta name="twitter:description"
+        content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika.">
+    <title>Geometricus d.o.o - HydroGraphBoost Projekt</title>
+</head>
+
+<body>
+    <nav class="container-md navbar navbar-expand-md mx-auto justify-content-between">
+        <a id="nav-logo" class="navbar-brand" href="index.html"><img src="image/geometricus-logo-transparent-white.png"
+                alt="Logo" /></a>
+                <div class="text-uppercase d-none d-md-block">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Usluge</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projekti
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+                                <a class="dropdown-item" href="hydrographboost.html">HydroGraphBoost</a>
+                                <a class="dropdown-item" href="spatialsupervision.html">SpatialSuperVision</a>
+                                <a class="dropdown-item" href="eu-petrinja.html">KK.08.2.1.16.0149</a>
+                            </div>
+                        </li>
+                
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Novosti</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">HR
+                                <img src="image/croatia-flag.png" alt="Hrvatska Zastava" style="max-height: 20px" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ENG
+                                <img src="image/england-flag.png" alt="UK Zastava" style="max-height: 20px" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+        <div class="menu-btn fs-1 mx-3 mx-sm-5">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="close-btn fs-1 mx-3 mx-sm-5">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+        <ul id="navigationLista">
+            <li><a href="#">Usluge</a></li>
+            <li class="dropdown" data-bs-theme="dark">
+                <a class="dropdown-toggle" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projekti
+                </a>
+                <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+                    <a class="dropdown-item text-light" href="hydrographboost.html">HydroGraphBoost</a>
+                    <a class="dropdown-item text-light" href="spatialsupervision.html">SpatialSuperVision</a>
+                    <a class="dropdown-item text-light" href="eu-petrinja.html">KK.08.2.1.16.0149</a>
+                </div>
+            </li>
+            <li><a href="#">Novosti</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+            <li>
+                <a href="#">HR
+                    <img src="image/croatia-flag.png" alt="Croatia Flag" style="max-height: 20px" /></a>
+            </li>
+            <li>
+                <a href="#">ENG
+                    <img src="image/england-flag.png" alt="UK Flag" style="max-height: 20px" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="hydrographboost">
+            <div class="container mt-7">
+                <h1 class="text-center text-primary py-2">HydroGraphBoost projekt</h1>
+                <div>
+                    <div class="row my-5">
+                        <div class="col ">
+                            <h2>O projektu</h2>
+                            <h5>Organizator projekta: Innovation Norway</h5>
+                            <h5>Promotor projekta: Geometricus d.o.o.</h5>
+                            <h5>Oznaka projekta: HR-INNOVATION-0025</h5>
+                            <br>
+                            <h6>U sklopu programa <a href="https://eeagrants.org/archive/2014-2021/programmes/HR-INNOVATION" target="_blank"><span>Inovacija, istraživanje, edukacija i kompetitivnost</span></a></h6>
+                        </div>
+                        <div class="col">
+                            <h2>Status projekta:</h2>
+                            <h5>Kompletiran</h5> <br>
+                            <h5>Inicijalni troškovi projekta: <br> €190,000 </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2">
+                    <p>
+                    Glavne aktivnosti tvrtke GEOMETRICUS su pružanje geodetskih usluga. Za razliku od većine drugih geodetskih tvrtki u Hrvatskoj, čije su aktivnosti uglavnom ograničene na osnovne geodetske usluge (terestrička geodezija i kartografski proizvodi koji se mogu proizvesti iz podataka), Geometricus može obavljati širi raspon geodetskih usluga, uključujući hidrografska mjerenja. <br>
+                    </p>
+                    <p>
+                    Međutim, da bi mogli dobiti ovlaštenje za složenija hidrografska mjerenja (koja bi omogućila sprečavanje daljnjih poplava u Hrvatskoj), Geometricus je uz pomoć <b>Norveškog financijskog mehanizma u sklopu programa Business Development and Innovation Croatia</b> implementirao vrhunsku tehnologiju koja se temelji na daljinskom istraživanju. <br> 
+                    </p>
+                    <p>
+                    Tehnologija koja se trenutno koristi u Hrvatskoj jednostavno nije prikladna za preventivno upravljanje, a metode mjerenja i kartografiranja vodenih tijela uglavnom uključuju klasične terestričke geodetske metode. To uključuje uporabu štapa, prizme i totalne stanice, a implicira zahtjev da se može pristupiti poziciji mora ili morskog dna, što često nije slučaj. Osim toga, zbog tehničkih poteškoća, mjerenja se ne obavljaju redovito, što povećava rizik od poplava. <br>
+                    </p>
+                    <p>
+                    Ulaganjem u novu vrhunsku tehnologiju koja primjenjuje metode daljinskog istraživanja, poput laserskog skeniranja LiDAR-om (detektiranje svjetlosti i određivanje udaljenosti), termovizijske inspekcije i drugih, te stvaranjem "digitalnih blizanaca" mora, obale, rijeka, jezera i drugih vodenih tijela, Geometricus će pružati dinamičnu podršku u praćenju i održavanju mora i vodenih tijela te time spriječiti daljnje poplave. <br>
+                    <p>
+                    </p>
+                    Novim tehnologijama već stječemo nove poslovne aranžmane i nove klijente, a očekujemo rast zaposlenih te povećane prihode i dobiti. <br>
+                    </p>
+                </div>
+        
+                <div class="px-2 pt-4">
+                    <div class="border-top border-bottom mb-3">
+                    <p class="text-center">Kroz projekt nabavljen je visokoprecizni multibeam S3PR novozelandskog proizvođača WASSP koji omogućava detaljno mapiranje vodnih tijela.</p>
+                    <div class="text-center">
+                    <img class="w-75 " src="image/hydrographboost/WASSP S3PR.webp" alt="WASSP S3PR multibeam">
+                    <p class="text-primary text-center pb-3 ">Proces montiranja WASSP S3PR multibeam sustava na brod.</p>
+                    </div>
+                    </div>
+        
+                    <div class="border-bottom mb-3">
+                    <p class="text-center">Kako bi mogli mapirati priobalno područje velikom efikasnošću i preciznošću koristimo RIEGL-ov miniVux 3.</p>
+                    <div class="text-center">
+                    <img class="w-75 " src="image/hydrographboost/riegl-minivux3.webp" alt="Riegl MiniVux 3">
+                    <p class="text-primary text-center pb-3 ">Riegl MiniVux 3 LiDAR senzor.</p>
+                    </div>
+                    </div>
+        
+                    <div class="border-bottom mb-3">
+                    <p class="text-center">Zbog potrebe RGB mapiranja, ispitivanja pukotina i solarne isplativosti nabavljen je aerofotogrametrijski set sa termalnom kamerom.</p>
+                    <div class="text-center">
+                    <img class="w-75 " src="image/hydrographboost/matriceP1.webp" alt="DJI P1">
+                    <p class="text-primary text-center pb-3 ">Aerofotogrametrijski set na letjelici M300.</p>
+                    </div>
+                    </div>
+        
+        
+                    <div class="border-bottom mb-3">
+                    <p class="text-center">Za kontrolu kvalitete nabavljena je vrhunska Leica-ina oprema: totalna stanica, GNSS sa Imaging tehnologijom te visokoprecizni nivelir. </p>
+                    <div class="text-center">
+                    <img class="w-75 " src="image/hydrographboost/leica1.webp" alt="Leica">
+                    <p class="text-primary text-center pb-3 ">Totalna stanica TS16, GNSS GS18I te nivelir LS15.</p>
+                    </div></div>
+        
+                    <div class="border-bottom mb-3">
+                    <p class="text-center">Kako bi obrada podataka tekla nesmetano nabavljena su i 4 računala visokih performansi.</p>
+                    <div class="text-center">
+                    <img class="w-75 " src="image/hydrographboost/pc.webp" alt="data processing">
+                    <p class="text-primary text-center pb-3 ">Računalo visokih performansi: Intel i9 13900K, 128GB DDR5 RAM, RTX 3060TI, 1TB SSD</p>
+                    </div>
+                    </div>
+                    
+                    <p>Ovom prilikom zahvaljujemo se na ukazanom povjerenju Innovation Norway-a te ćemo dokazati visoku profesionalnost i konkuretnost na tržištu kroz godine koje dolaze. </p>
+                </div>
+        
+                
+                    
+                
+        
+            </div>
+        </section>
+
+
+    </main>
+    <!--Overlay kad se klikne navigation bar na mobitelu-->
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
