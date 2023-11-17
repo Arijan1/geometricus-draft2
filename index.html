@@ -1,250 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/32c0f3b9ec.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/32c0f3b9ec.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
 
-    <!--SPLIDE SLIDER-->
-    <script src="
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!--SPLIDE SLIDER-->
+  <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
-    <link
-      href="
+  <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-      rel="stylesheet"
-    />
+" rel="stylesheet" />
 
-    <!--META TAGS-->
-    <meta
-      name="robots"
-      content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-    />
-    <meta
-      name="description"
-      content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika. Geodet - Požega, Zagreb."
-    />
-    <!--OPEN GRAPH-->
-    <meta property="og:title" content="Geometricus d.o.o - geodetske usluge" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://geometricus.hr/" />
-    <meta property="og:image" content="" />
-    <!--TREBA DODAT KAD SE UPLOADA-->
-    <meta
-      property="og:description"
-      content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika. Geodet - Požega, Zagreb."
-    />
-    <!--Twitter card oznake, treba dodat kad se uploada + ako se bude radio Twitter nekad u buducnosti-->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Geometricus d.o.o - geodetske usluge" />
-    <meta
-      name="twitter:description"
-      content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika."
-    />
-    <title>Geometricus d.o.o - geodetske usluge</title>
-  </head>
+  <!--faviconIcon-->
+  <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
+  <!--META TAGS-->
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <meta name="description"
+    content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika. Geodet - Požega, Zagreb." />
+  <!--OPEN GRAPH-->
+  <meta property="og:title" content="Geometricus d.o.o - geodetske usluge" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geometricus.hr/" />
+  <meta property="og:image" content="" />
+  <!--TREBA DODAT KAD SE UPLOADA-->
+  <meta property="og:description"
+    content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika. Geodet - Požega, Zagreb." />
+  <!--Twitter card oznake, treba dodat kad se uploada + ako se bude radio Twitter nekad u buducnosti-->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Geometricus d.o.o - geodetske usluge" />
+  <meta name="twitter:description"
+    content="Geodetske usluge - projektiranje, nadzor, izrada geodetskih elaborata, 3D lasersko skeniranje, LiDAR, fotogrametrija, hidrografija, lociranje podzemnih vodova, GIS, geoinformatika." />
+  <title>Geometricus d.o.o - geodetske usluge</title>
+</head>
 
-  <body>
-    <nav
-      class="container-md navbar navbar-expand-md mx-auto justify-content-between"
-    >
-      <a id="nav-logo" class="navbar-brand" href="#"
-        ><img src="image/geometricus-logo-transparent-white.png" alt="Logo"
-      /></a>
-      <div class="text-uppercase d-none d-md-block">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Usluge</a>
-          </li>
-          <li class="nav-item mx-2 dropdown">
-            <a
-              class="nav-link dropdown-toggle text-light"
-              href="#"
-              id="projektiDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Projekti
-            </a>
-            <div class="dropdown-menu" aria-labelledby="projektiDropdown">
-              <a class="dropdown-item" href="hydrographboost.html"
-                >HydroGraphBoost</a
-              >
-              <a class="dropdown-item" href="spatialsupervision.html"
-                >SpatialSuperVision</a
-              >
-              <a class="dropdown-item" href="eu-petrinja.html"
-                >KK.08.2.1.16.0149</a
-              >
-            </div>
-          </li>
-
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Novosti</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#kontakt">Kontakt</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#"
-              >HR
-              <img
-                src="image/croatia-flag.png"
-                alt="Hrvatska Zastava"
-                style="max-height: 20px"
-              />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              >ENG
-              <img
-                src="image/england-flag.png"
-                alt="UK Zastava"
-                style="max-height: 20px"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menu-btn fs-1 mx-3 mx-sm-5">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="close-btn fs-1 mx-3 mx-sm-5">
-        <i class="fa-solid fa-x"></i>
-      </div>
-
-      <ul id="navigationLista">
-        <li><a href="#">Usluge</a></li>
-        <li class="dropdown" data-bs-theme="dark">
-          <a
-            class="dropdown-toggle"
-            href="#"
-            id="projektiDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
+<body>
+  <nav class="container-md navbar navbar-expand-md mx-auto justify-content-between">
+    <a id="nav-logo" class="navbar-brand" href="#"><img src="image/geometricus-logo-transparent-white.png"
+        alt="Logo" /></a>
+    <div class="text-uppercase d-none d-md-block">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Usluge</a>
+        </li>
+        <li class="nav-item mx-2 dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="projektiDropdown" role="button"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Projekti
           </a>
           <div class="dropdown-menu" aria-labelledby="projektiDropdown">
-            <a class="dropdown-item text-light" href="hydrographboost.html"
-              >HydroGraphBoost</a
-            >
-            <a class="dropdown-item text-light" href="spatialsupervision.html"
-              >SpatialSuperVision</a
-            >
-            <a class="dropdown-item text-light" href="eu-petrinja.html"
-              >KK.08.2.1.16.0149</a
-            >
+            <a class="dropdown-item" href="hydrographboost.html">HydroGraphBoost</a>
+            <a class="dropdown-item" href="spatialsupervision.html">SpatialSuperVision</a>
+            <a class="dropdown-item" href="eu-petrinja.html">KK.08.2.1.16.0149</a>
           </div>
         </li>
-        <li><a href="#">Novosti</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li>
-          <a href="#"
-            >HR
-            <img
-              src="image/croatia-flag.png"
-              alt="Croatia Flag"
-              style="max-height: 20px"
-          /></a>
+
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Novosti</a>
         </li>
-        <li>
-          <a href="#"
-            >ENG
-            <img
-              src="image/england-flag.png"
-              alt="UK Flag"
-              style="max-height: 20px"
-          /></a>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">HR
+            <img src="image/croatia-flag.png" alt="Hrvatska Zastava" style="max-height: 20px" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ENG
+            <img src="image/england-flag.png" alt="UK Zastava" style="max-height: 20px" />
+          </a>
         </li>
       </ul>
-    </nav>
+    </div>
 
-    <main>
-      <!--LANDING SECTION-->
-      <div
-        class="container-md mx-auto mt-5 mt-sm-7 d-flex flex-column flex-lg-row align-items-center gap-5"
-      >
-        <div class="col">
-          <h1 class="fw-medium mb-4">GEOMETRICUS d.o.o Geodetska Mjerenja</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
-            turpis libero. Aliquam eget mattis quam. Fusce eu nisl in odio
-            viverra eleifend vitae vitae nulla. Curabitur facilisis, augue non
-            sollicitudin sollicitudin, arcu mauris finibus est, et ultricies
-            arcu urna vel eros.
-          </p>
+    <div class="menu-btn fs-1 mx-3 mx-sm-5">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="close-btn fs-1 mx-3 mx-sm-5">
+      <i class="fa-solid fa-x"></i>
+    </div>
+
+    <ul id="navigationLista">
+      <li><a href="#">Usluge</a></li>
+      <li class="dropdown" data-bs-theme="dark">
+        <a class="dropdown-toggle" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Projekti
+        </a>
+        <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+          <a class="dropdown-item text-light" href="hydrographboost.html">HydroGraphBoost</a>
+          <a class="dropdown-item text-light" href="spatialsupervision.html">SpatialSuperVision</a>
+          <a class="dropdown-item text-light" href="eu-petrinja.html">KK.08.2.1.16.0149</a>
         </div>
-        <div class="col">
-          <img
-            src="image/drone-image.png"
-            alt="Image of a drone"
-            class="w-100"
-          />
-        </div>
+      </li>
+      <li><a href="#">Novosti</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li>
+        <a href="#">HR
+          <img src="image/croatia-flag.png" alt="Croatia Flag" style="max-height: 20px" /></a>
+      </li>
+      <li>
+        <a href="#">ENG
+          <img src="image/england-flag.png" alt="UK Flag" style="max-height: 20px" /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <!--LANDING SECTION-->
+    <div class="container-md mx-auto mt-5 mt-sm-7 d-flex flex-column flex-lg-row align-items-center gap-5">
+      <div class="col">
+        <h1 class="fw-medium mb-4">GEOMETRICUS d.o.o Geodetska Mjerenja</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
+          turpis libero. Aliquam eget mattis quam. Fusce eu nisl in odio
+          viverra eleifend vitae vitae nulla. Curabitur facilisis, augue non
+          sollicitudin sollicitudin, arcu mauris finibus est, et ultricies
+          arcu urna vel eros.
+        </p>
       </div>
-
-      <!--banner-->
-      <div class="container-md">
-        <img
-          src="image/geometricus-landing-banner.png"
-          class="w-100"
-          alt="Innovation Norway, Europski strukturni i investicijski fondovi, operativni program konkurentnost i kohezija, Europska Unija zajedno do EU fondova"
-        />
+      <div class="col">
+        <img src="image/drone-image.png" alt="Image of a drone" class="w-100" />
       </div>
+    </div>
 
-      <!--usluge-->
-     <div class="container-fluid mt-5 space-background-image py-5 py-md-7">
-        <div class="container-md text-center">
-          <h2 class="fs-1">Usluge</h2>
-          <p class="text-uppercase fs-5 my-4 text-secondary">Što Nudimo</p>
-          <h3 class="fs-2 mb-6">Lorem ipsum dolor sit amet, consectetur</h3>
-          <ul
-            class="list-group list-unstyled d-flex flex-row gap-3 justify-content-center flex-wrap"
-          >
-            <li class="fs-5 mx-4 lh-1">Katastarske Usluge</li>
-            <li class="fs-5 mx-4 lh-1">Inženjerska Geodezija</li>
-            <li class="fs-5 mx-4 lh-1">LiDAR</li>
-            <li class="fs-5 mx-4 lh-1">Fotogrametrija</li>
-            <li class="fs-5 mx-4 lh-1">Hidrografija</li>
-            <li class="fs-5 mx-4 lh-1">Geoinformatika</li>
-          </ul>
-        </div>
-      </div> 
+    <!--banner-->
+    <div class="container-md">
+      <img src="image/geometricus-landing-banner.png" class="w-100"
+        alt="Innovation Norway, Europski strukturni i investicijski fondovi, operativni program konkurentnost i kohezija, Europska Unija zajedno do EU fondova" />
+    </div>
+
+    <!--usluge-->
+    <div class="container-fluid mt-5 space-background-image py-5 py-md-7">
+      <div class="container-md text-center">
+        <h2 class="fs-1">Usluge</h2>
+        <p class="text-uppercase fs-5 my-4 text-secondary">Što Nudimo</p>
+        <h3 class="fs-2 mb-6">Lorem ipsum dolor sit amet, consectetur</h3>
+        <ul class="list-group list-unstyled d-flex flex-row gap-3 justify-content-center flex-wrap">
+          <li class="fs-5 mx-4 lh-1">Katastarske Usluge</li>
+          <li class="fs-5 mx-4 lh-1">Inženjerska Geodezija</li>
+          <li class="fs-5 mx-4 lh-1">LiDAR</li>
+          <li class="fs-5 mx-4 lh-1">Fotogrametrija</li>
+          <li class="fs-5 mx-4 lh-1">Hidrografija</li>
+          <li class="fs-5 mx-4 lh-1">Geoinformatika</li>
+        </ul>
+      </div>
+    </div>
 
 
 
-      <!-- <section id="service" class="services pt-0">
+    <!-- <section id="service" class="services pt-0">
 
         <div class="container aos-init aos-animate" data-aos="fade-up">
           <h2 class="fs-1 text-center mt-5">Usluge</h2>
@@ -330,311 +249,231 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </section> -->
 
-      <!-- LEICA GEOSYSTEMS-->
+    <!-- LEICA GEOSYSTEMS-->
 
-      <div class="container-fluid leica-bg mt-5 py-1 py-md-7">
-        <div class="container-md">
-          <!--H2 velicina je u custom cssu, bootstrap ne podrzava mjenjanje widtha po breakpointsima-->
-          <h2 class="leica-naslov">
-            Najkvalitetnija Leica Geosystems oprema uz naš stručan tim garantira
-            uspjeh
-          </h2>
+    <div class="container-fluid leica-bg mt-5 py-1 py-md-7">
+      <div class="container-md">
+        <!--H2 velicina je u custom cssu, bootstrap ne podrzava mjenjanje widtha po breakpointsima-->
+        <h2 class="leica-naslov">
+          Najkvalitetnija Leica Geosystems oprema uz naš stručan tim garantira
+          uspjeh
+        </h2>
+      </div>
+    </div>
+
+    <div class="container-md mt-5">
+
+
+      <div class="card bg-black  my-5">
+        <div>
+          <div class="justify-content-center p-5">
+            <h5 class="slider-naslov text-center">
+              <strong>Terestrička fotogrametrija i aerofotogrametrija</strong>
+            </h5>
+          </div>
+        </div>
+
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <div class="image-wrap p-4">
+            <img src="image/terestricka-fotogametrija-i-aerofotogametrija.webp" class="mw-100"
+              alt="Terestrička Fotogrametrija i Aerofotogrametrija" />
+          </div>
+          <div>
+            <p>
+              Aerofotogrametrijski snimci služe za isporuku ortofota
+              visoke rezolucije te digitalnog modela terena.
+              <br />
+              <br />Za potrebe na manjoj skali raspolažemo
+              visokopreciznom bespilotnom letjelicom DJI Phantom 4 RTK.
+              Za potrebe srednjeg dometa i snimanja koridora koristimo
+              Matrice M300 RTK u kombinaciji sa L1/P1 senzorom.
+            </p>
+            <p>
+              Za potrebe na većoj skali koristimo Delta Quad Map VTOL i
+              Sony A7RIV kameru.
+              <br />
+              <br />Navedena kombinacija omogućava autonomiju od 2 sata
+              te pritom omogućava mapiranje 1200ha pri rezoluciji od
+              3cm/px. Uz pomoć Sonyjeve kamere vršimo terestričku i
+              blizupredmetnu fotogrametriju.
+            </p>
+          </div>
+
         </div>
       </div>
 
-      <div class="container-md mt-5">
-        
-                      
-                                <div class="card bg-black  my-5">
-                                    <div>
-                                      <div class="justify-content-center p-5">
-                                        <h5 class="slider-naslov text-center">
-                                          <strong
-                                            >Terestrička fotogrametrija i aerofotogrametrija</strong
-                                          >
-                                        </h5>
-                                      </div>
-                                    </div>
-                        
-                                    <div
-                                      class="container d-flex flex-column flex-lg-row align-items-center"
-                                    >
-                                      <div class="image-wrap p-4">
-                                        <img
-                                          src="image/terestricka-fotogametrija-i-aerofotogametrija.webp"
-                                          class="mw-100"
-                                          alt="Terestrička Fotogrametrija i Aerofotogrametrija"
-                                        />
-                                      </div>
-                                      <div>
-                                        <p>
-                                          Aerofotogrametrijski snimci služe za isporuku ortofota
-                                          visoke rezolucije te digitalnog modela terena.
-                                          <br />
-                                          <br />Za potrebe na manjoj skali raspolažemo
-                                          visokopreciznom bespilotnom letjelicom DJI Phantom 4 RTK.
-                                          Za potrebe srednjeg dometa i snimanja koridora koristimo
-                                          Matrice M300 RTK u kombinaciji sa L1/P1 senzorom.
-                                        </p>
-                                        <p>
-                                          Za potrebe na većoj skali koristimo Delta Quad Map VTOL i
-                                          Sony A7RIV kameru.
-                                          <br />
-                                          <br />Navedena kombinacija omogućava autonomiju od 2 sata
-                                          te pritom omogućava mapiranje 1200ha pri rezoluciji od
-                                          3cm/px. Uz pomoć Sonyjeve kamere vršimo terestričku i
-                                          blizupredmetnu fotogrametriju.
-                                        </p>
-                                      </div>
-                      
-                                </div>
-                                </div>
-                            
-                           
-                                <div class="card bg-black  my-5">
-                                <div>
-                                  <div class="justify-content-center p-5">
-                                    <h5 class="slider-naslov text-center">
-                                      <strong>LiDAR i terestričko lasersko skeniranje</strong>
-                                    </h5>
-                                  </div>
-                                </div>
-                                <div>
-                                  <div
-                                    class="container d-flex flex-column flex-lg-row align-items-center"
-                                  >
-                                    <div class="image-wrap p-2">
-                                      <video
-                                        autoplay
-                                        loop
-                                        muted
-                                        src="image/rieglLidar.mp4"
-                                        style="width: 100%"
-                                        loading="lazy"
-                                      ></video>
-                                    </div>
-                                    <div>
-                                      <p>
-                                        Kombinacijom Applanix-ovog APX20 IMU-a te Riegl-ovog miniVUX
-                                        3 laserskog senzora isporučujemo detaljan digitalni model
-                                        terena.
-                                        <br />
-                                        <br />Jedna od glavnih prednosti u usporedbi s
-                                        fotogrametrijom je mogućnost filtriranja vegetacije.
-                                      </p>
-                                      <p>
-                                        Primjenu nalazi u mapiranju koridora - cestovne prometnice,
-                                        željeznice i dalekovodi, složenih industrijskih postrojenja,
-                                        šumskog inventara, velikih rudarskih površina...
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
 
-
-                              <div class="card bg-black  my-5">
-                                <div>
-                                  <div class="justify-content-center p-5">
-                                    <h5 class="slider-naslov text-center">
-                                      <strong>Multibeam hidrografija</strong>
-                                    </h5>
-                                  </div>
-                                </div>
-                                <div>
-                                  <div
-                                    class="container d-flex flex-column flex-lg-row align-items-center"
-                                  >
-                                    <div class="image-wrap p-4">
-                                      <img
-                                        src="image/multibeam-hidrografija.webp"
-                                        alt="Multibeam Hidrografija"
-                                        class="w-100"
-                                      />
-                                    </div>
-                                    <div>
-                                      <p>
-                                        WASSP S3PR Multibeam Echosounder (MBES) namjenski je
-                                        napravljen za geodetsko mapiranje i istraživanje. Simultanim
-                                        generiranjem do 100 pingova u sekundi pri kutu od 120
-                                        stupnjeva te uključivanjem napredne obrade signala s lakoćom
-                                        vidimo potpunu i točnu sliku podvodne batimetrije.
-                                      </p>
-                                      <p>
-                                        Ovaj sustav idealan je za: detaljno batimetrijsko
-                                        istraživanje, istraživanje luka i upravljanje kanalima,
-                                        jaružanje, inspekciju pomorske infrastrukture, istraživanje
-                                        olupina i operacije traganja i spašavanja
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-
-                            </div>
-                            
-
-         
+      <div class="card bg-black  my-5">
+        <div>
+          <div class="justify-content-center p-5">
+            <h5 class="slider-naslov text-center">
+              <strong>LiDAR i terestričko lasersko skeniranje</strong>
+            </h5>
+          </div>
+        </div>
+        <div>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <div class="image-wrap p-2">
+              <video autoplay loop muted src="image/rieglLidar.mp4" style="width: 100%" loading="lazy"></video>
+            </div>
+            <div>
+              <p>
+                Kombinacijom Applanix-ovog APX20 IMU-a te Riegl-ovog miniVUX
+                3 laserskog senzora isporučujemo detaljan digitalni model
+                terena.
+                <br />
+                <br />Jedna od glavnih prednosti u usporedbi s
+                fotogrametrijom je mogućnost filtriranja vegetacije.
+              </p>
+              <p>
+                Primjenu nalazi u mapiranju koridora - cestovne prometnice,
+                željeznice i dalekovodi, složenih industrijskih postrojenja,
+                šumskog inventara, velikih rudarskih površina...
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="container-md mt-7 contact" id="kontakt">
-        <div
-          class="text-center mx-auto"
-          data-wow-delay=".3s"
-          style="
+
+      <div class="card bg-black  my-5">
+        <div>
+          <div class="justify-content-center p-5">
+            <h5 class="slider-naslov text-center">
+              <strong>Multibeam hidrografija</strong>
+            </h5>
+          </div>
+        </div>
+        <div>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <div class="image-wrap p-4">
+              <img src="image/multibeam-hidrografija.webp" alt="Multibeam Hidrografija" class="w-100" />
+            </div>
+            <div>
+              <p>
+                WASSP S3PR Multibeam Echosounder (MBES) namjenski je
+                napravljen za geodetsko mapiranje i istraživanje. Simultanim
+                generiranjem do 100 pingova u sekundi pri kutu od 120
+                stupnjeva te uključivanjem napredne obrade signala s lakoćom
+                vidimo potpunu i točnu sliku podvodne batimetrije.
+              </p>
+              <p>
+                Ovaj sustav idealan je za: detaljno batimetrijsko
+                istraživanje, istraživanje luka i upravljanje kanalima,
+                jaružanje, inspekciju pomorske infrastrukture, istraživanje
+                olupina i operacije traganja i spašavanja
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    </div>
+
+    <div class="container-md mt-7 contact" id="kontakt">
+      <div class="text-center mx-auto" data-wow-delay=".3s" style="
             max-width: 600px;
             visibility: visible;
             animation-delay: 0.3s;
             animation-name: fadeIn;
-          "
-        >
-          <h2 class="mb-3 text-primary fw-semibold">Kontaktirajte nas</h2>
-          <p class="mb-2">
-            Imate upit vezan za naše usluge? Slobodno nam se obratite putem
-            kontakt obrasca, a mi ćemo vam odgovoriti u najkraćem mogućem roku.
-          </p>
-        </div>
-        <div class="position-relative py-5">
-          <div class="row g-5 justify-content-center">
-            <div
-              class="col-xl-6 col-lg-6"
-              data-wow-delay=".3s"
-              style="
+          ">
+        <h2 class="mb-3 text-primary fw-semibold">Kontaktirajte nas</h2>
+        <p class="mb-2">
+          Imate upit vezan za naše usluge? Slobodno nam se obratite putem
+          kontakt obrasca, a mi ćemo vam odgovoriti u najkraćem mogućem roku.
+        </p>
+      </div>
+      <div class="position-relative py-5">
+        <div class="row g-5 justify-content-center">
+          <div class="col-xl-6 col-lg-6" data-wow-delay=".3s" style="
                 visibility: visible;
                 animation-delay: 0.3s;
                 animation-name: fadeIn;
-              "
-            >
-              <div class="d-flex bg-white p-3 rounded">
-                <div
-                  class="flex-shrink-0 d-flex align-self-center align-items-center justify-content-center bg-black rounded-circle"
-                  style="width: 32px; height: 32px"
-                >
-                  <i class="fas fa-map-marker-alt text-white"></i>
-                </div>
-                <div class="ms-3">
-                  <h4 class="fw-semibold text-black">Adresa</h4>
-                  <a
-                    href="https://maps.app.goo.gl/NxA5RXfvZcyAMuin9"
-                    target="_blank"
-                    class="h5 text-black"
-                    >Županijska 4, Požega</a
-                  >
-                </div>
+              ">
+            <div class="d-flex bg-white p-3 rounded">
+              <div
+                class="flex-shrink-0 d-flex align-self-center align-items-center justify-content-center bg-black rounded-circle"
+                style="width: 32px; height: 32px">
+                <i class="fas fa-map-marker-alt text-white"></i>
               </div>
-            </div>
-            <div
-              class="col-xl-6 col-lg-6"
-              data-wow-delay=".7s"
-              style="
-                visibility: visible;
-                animation-delay: 0.7s;
-                animation-name: fadeIn;
-              "
-            >
-              <div class="d-flex bg-light p-3 rounded">
-                <div
-                  class="flex-shrink-0 d-flex align-self-center align-items-center justify-content-center bg-black rounded-circle"
-                  style="width: 32px; height: 32px"
-                >
-                  <i class="fa fa-envelope text-white"></i>
-                </div>
-                <div class="ms-3">
-                  <h4 class="text-black fw-semibold">Email</h4>
-                  <a
-                    class="h5 text-black"
-                    href="mailto:info@geometricus.hr"
-                    target="_blank"
-                    >info@geometricus.hr</a
-                  >
-                </div>
+              <div class="ms-3">
+                <h4 class="fw-semibold text-black">Adresa</h4>
+                <a href="https://maps.app.goo.gl/NxA5RXfvZcyAMuin9" target="_blank" class="h5 text-black">Županijska 4,
+                  Požega</a>
               </div>
             </div>
           </div>
-          <div class="row g-5">
-            <div
-              class="col-lg-6"
-              data-wow-delay=".3s"
-              style="
+          <div class="col-xl-6 col-lg-6" data-wow-delay=".7s" style="
+                visibility: visible;
+                animation-delay: 0.7s;
+                animation-name: fadeIn;
+              ">
+            <div class="d-flex bg-light p-3 rounded">
+              <div
+                class="flex-shrink-0 d-flex align-self-center align-items-center justify-content-center bg-black rounded-circle"
+                style="width: 32px; height: 32px">
+                <i class="fa fa-envelope text-white"></i>
+              </div>
+              <div class="ms-3">
+                <h4 class="text-black fw-semibold">Email</h4>
+                <a class="h5 text-black" href="mailto:info@geometricus.hr" target="_blank">info@geometricus.hr</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-6" data-wow-delay=".3s" style="
                 visibility: visible;
                 animation-delay: 0.3s;
                 animation-name: fadeIn;
-              "
-            >
-              <div class="h-100 rounded mt-5">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.8421062011917!2d17.673374212938853!3d45.33181077095152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475d84db7882ab5f%3A0x86da7ee0db407d16!2zxb11cGFuaWpza2EgdWwuIDQsIDM0MDAwLCBQb8W-ZWdh!5e0!3m2!1sen!2shr!4v1699565351181!5m2!1sen!2shr"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  class="w-100"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+              ">
+            <div class="h-100 rounded mt-5">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.8421062011917!2d17.673374212938853!3d45.33181077095152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475d84db7882ab5f%3A0x86da7ee0db407d16!2zxb11cGFuaWpza2EgdWwuIDQsIDM0MDAwLCBQb8W-ZWdh!5e0!3m2!1sen!2shr!4v1699565351181!5m2!1sen!2shr"
+                width="600" height="450" style="border: 0" class="w-100" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div
-              class="col-lg-6"
-              data-wow-delay=".5s"
-              style="
+          </div>
+          <div class="col-lg-6" data-wow-delay=".5s" style="
                 visibility: visible;
                 animation-delay: 0.5s;
                 animation-name: fadeIn;
-              "
-            >
-              <div class="rounded mt-lg-5">
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Vaše Ime"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="email"
-                    class="form-control border-0 py-3"
-                    placeholder="Vaš Email"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Vrsta Vašeg Upita"
-                  />
-                </div>
-                <div class="mb-4">
-                  <textarea
-                    class="w-100 form-control border-0 py-3"
-                    rows="6"
-                    cols="10"
-                    placeholder="Poruka"
-                  ></textarea>
-                </div>
-                <div class="text-start">
-                  <button
-                    class="btn bg-primary text-black fw-semibold py-3 px-5"
-                    type="button"
-                  >
-                    Pošalji
-                  </button>
-                </div>
+              ">
+            <div class="rounded mt-lg-5">
+              <div class="mb-4">
+                <input type="text" class="form-control border-0 py-3" placeholder="Vaše Ime" />
+              </div>
+              <div class="mb-4">
+                <input type="email" class="form-control border-0 py-3" placeholder="Vaš Email" />
+              </div>
+              <div class="mb-4">
+                <input type="text" class="form-control border-0 py-3" placeholder="Vrsta Vašeg Upita" />
+              </div>
+              <div class="mb-4">
+                <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Poruka"></textarea>
+              </div>
+              <div class="text-start">
+                <button class="btn bg-primary text-black fw-semibold py-3 px-5" type="button">
+                  Pošalji
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!--Overlay kad se klikne navigation bar na mobitelu-->
-    <div class="overlay"></div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </main>
+  <!--Overlay kad se klikne navigation bar na mobitelu-->
+  <div class="overlay"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
