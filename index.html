@@ -19,11 +19,15 @@
 
   <!--SPLIDE SLIDER-->
   <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
   <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet" />
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  "rel="stylesheet" />
+
+  <!--ANIMATE ON SCROLL-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!--faviconIcon-->
   <link rel="shortcut icon" href="image/favicon/favicon.ico" type="image/x-icon">
@@ -163,127 +167,221 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
-<div class="container-fluid mt-5 py-5 py-md-7">
+<div class="container-fluid mt-5 py-5 py-md-7 ">
       <div class="container-md">
         <h2 class="fs-1 text-center">Usluge</h2>
         <p class="text-uppercase fs-5 my-4 text-secondary text-center">Što Nudimo</p>
-        <div class="container mt-7 d-flex flex-column flex-lg-row align-items-center">
-          <div class="image-wrap p-4 w-100">
-            <img src="image/air2-png-8bit.webp" class="w-100"
-              alt="Terestrička Fotogrametrija i Aerofotogrametrija" />
+
+        <div class="mt-7">
+          <h2 class="text-center mb-4 text-primary fw-semibold">LiDAR Mapiranje</h2>
+        <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+          <div class="image-wrap p-4 w-100" data-aos="fade-right" data-aos-duration="1000">
+            <img src="image/white-draft-img.png" class="w-100"
+              alt="" />
           </div>
-          <div class="w-100">
-            <h2 class="text-center mb-4">LiDAR Mapiranje</h2>
+          <div class="w-100" data-aos="fade-left" data-aos-duration="1000">
+            <h3 class="fs-1 fw-semibold border-bottom text-center mb-4">AIR</h3>
             <p>
-              Aerofotogrametrijski snimci služe za isporuku ortofota
-              visoke rezolucije te digitalnog modela terena.
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
               <br />
-              <br />Za potrebe na manjoj skali raspolažemo
-              visokopreciznom bespilotnom letjelicom DJI Phantom 4 RTK.
-              Za potrebe srednjeg dometa i snimanja koridora koristimo
-              Matrice M300 RTK u kombinaciji sa L1/P1 senzorom.
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
             </p>
             <p>
-              Za potrebe na većoj skali koristimo Delta Quad Map VTOL i
-              Sony A7RIV kameru.
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
               <br />
-              <br />Navedena kombinacija omogućava autonomiju od 2 sata
-              te pritom omogućava mapiranje 1200ha pri rezoluciji od
-              3cm/px. Uz pomoć Sonyjeve kamere vršimo terestričku i
-              blizupredmetnu fotogrametriju.
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
             </p>
           </div>
 
         </div>
-        
+        <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+    
+          <div class="w-100" data-aos="fade-right" data-aos-duration="1000">
+            <h3 class="fs-1 fw-semibold border-bottom text-center mb-4"">GROUND</h3>
+            <p>
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+              <br />
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+            </p>
+            <p>
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+              <br />
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+            </p>
+          </div>
+          <div class="image-wrap p-4 w-100" data-aos="fade-left" data-aos-duration="1000">
+            <img src="image/white-draft-img.png" class="w-100"
+              alt="" />
+          </div>
+
+        </div>
         </div>
 
 
-    <!-- <section id="service" class="services pt-0">
 
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-          <h2 class="fs-1 text-center mt-5">Usluge</h2>
-          <p class="text-uppercase fs-5 my-4 text-secondary text-center">Što Nudimo</p>
-  
-  
-          <div class="row g-5 mt-5">
-  
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-              <div class="card border-0">
-                <div class="card-img">
-                  <img src="image/air2-png-8bit.webp" alt="" class="img-fluid">
-                </div>
-                <div class="p-2">
-                  <h3 class="text-black fw-semibold text-center my-0 fs-5">LiDAR mapiranje</h3>
-        
-                </div>
-              </div>
+
+
+
+
+
+        <div class="mt-7">
+          <h2 class="text-center mb-4 text-primary fw-semibold">RGB / Multispektralne / termalne / ortofoto i sferne snimke</h2>
+        <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+          <div class="image-wrap p-4 w-100" data-aos="fade-right" data-aos-duration="1000">
+            <img src="image/white-draft-img.png" class="w-100"
+              alt="" />
+          </div>
+          <div class="w-100" data-aos="fade-left" data-aos-duration="1000">
+            <p>
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+              <br />
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+            </p>
+            <p>
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+              <br />
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+            </p>
+          </div>
+
+        </div>
+        </div>
+
+
+
+
+
+
+        <div class="mt-7">
+          <h2 class="text-center mb-4 text-primary fw-semibold">Podzemno mapiranje i detekcija</h2>
+          <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+    
+            <div class="w-100" data-aos="fade-right" data-aos-duration="1000">
+              <h3 class="fs-1 fw-semibold border-bottom text-center mb-4"">UNDERGROUND</h3>
+              <p>
+                Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+                <br />
+                <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+                felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+              </p>
+              <p>
+                Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+                <br />
+                <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+                felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+              </p>
+            </div>
+            <div class="image-wrap p-4 w-100" data-aos="fade-left" data-aos-duration="1000">
+              <img src="image/white-draft-img.png" class="w-100"
+                alt="" />
             </div>
   
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <div class="card border-0">
-                <div class="card-img">
-                  <img src="image/air2-png-8bit.webp" alt="" class="img-fluid">
-                </div>
-                <div class="p-2">
-                  <h3 class="text-black fw-semibold text-center my-0 fs-5">Orto i sferne snimke</h3>
-        
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-              <div class="card border-0">
-                <div class="card-img">
-                  <img src="image/air2-png-8bit.webp" alt="" class="img-fluid">
-                </div>
-                <div class="p-2">
-                  <h3 class="text-black fw-semibold text-center my-0 fs-5">Podzemno mapiranje</h3>
-        
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-              <div class="card border-0">
-                <div class="card-img">
-                  <img src="image/air2-png-8bit.webp" alt="" class="img-fluid">
-                </div>
-                <div class="p-2">
-                <h3 class="text-black fw-semibold text-center my-0 fs-5">Hidrografija</h3>
+          </div>
+        </div>
+
+
+
+        <div class="mt-7">
+          <h2 class="text-center mb-4 text-primary fw-semibold">Hidrografija</h2>
+        <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+          <div class="image-wrap p-4 w-100" data-aos="fade-right" data-aos-duration="1000">
+            <img src="image/white-draft-img.png" class="w-100"
+              alt="" />
+          </div>
+          <div class="w-100" data-aos="fade-left" data-aos-duration="1000">
+            <p>
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+              <br />
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+            </p>
+            <p>
+              Cras sollicitudin cursus fermentum. Mauris ut aliquet sem. Ut mi ipsum, porttitor et ullamcorper id, dictum ac tortor.
+              <br />
+              <br />Integer mollis ligula et tempor lacinia. Suspendisse potenti. In hac habitasse platea dictumst. Quisque porttitor consectetur urna. Nam accumsan, justo et faucibus scelerisque,
+              felis elit laoreet massa, nec ullamcorper purus lorem dignissim tellus. Aenean ut ligula non lorem tempor iaculis.
+            </p>
+          </div>
+
+        </div>
+        </div>
+
+
+
+        <div class="mt-7">
+          <h2 class="text-center mb-4 text-primary fw-semibold">Inženjerska Geodezija</h2>
+          <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+    
+            <div class="w-100" data-aos="fade-right" data-aos-duration="1000">
       
-              </div>
-              </div>
+              <p>
+                Primjena mjernih sustava u projektiranju i izgradnji objekata te praćenju pomaka i deformacija pri izgradnji i eksploataciji.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Podloge za izvedbeni i glavni projekt</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Niskogradnja - ceste, autoceste, mostovi, tuneli, ...</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Visokogradnja - zgrade, industrijska postrojenja, stadioni, ...</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Energetika - dalekovodi, plinovodi, naftovodi, hidroelektrane, ...</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Uspostava geodetske mreže</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Precizna iskolčenja objekata</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Izrada posebnih geodetskih podloga</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Lociranje vodova</li>
+              </ul>
             </div>
-  
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-              <div class="card border-0">
-                <div class="card-img">
-                  <img src="image/air2-png-8bit.webp" alt="" class="img-fluid">
-                </div>
-                <div class="p-2">
-                  <h3 class="text-black fw-semibold text-center my-0 fs-5">Inženjerska geodezija</h3>
-        
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
-              <div class="card border-0">
-                <div class="card-img">
-                  <img src="image/air2-png-8bit.webp" alt="" class="img-fluid">
-                </div>
-                <div class="p-2">
-                  <h3 class="text-black fw-semibold text-center my-0 fs-5">Katastarske usluge</h3>
-        
-                </div>
-              </div>
+            <div class="image-wrap p-4 w-100" data-aos="fade-left" data-aos-duration="1000">
+              <img src="image/white-draft-img.png" class="w-100"
+                alt="" />
             </div>
   
           </div>
-  
         </div>
-      </section> -->
+
+
+        <div class="mt-7">
+          <h2 class="text-center mb-4 text-primary fw-semibold">Katastarske Usluge</h2>
+          <div class="container d-flex mb-7 flex-column flex-lg-row align-items-center gap-4">
+            <div class="image-wrap p-4 w-100" data-aos="fade-right" data-aos-duration="1000">
+              <img src="image/white-draft-img.png" class="w-100"
+                alt="" />
+            </div>
+    
+            <div class="w-100" data-aos="fade-left" data-aos-duration="1000">
+      
+              <p>
+                Kvalitetna, brza i pouzdana izrada geodetskih elaborata svih namjena.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Upis objekata u katastar i zemljišnu knjigu</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Parcelacija zemljišta</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Usklađenje katastra i zemljišne knjige</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Geodetski projekt</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Uspostava katastra infrastrukture</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Izrada posebnih geodetskih podloga</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Evidentiranje pomorskog ili vodnog dobra</li>
+                <li class="list-group-item list-group-item-action d-flex align-items-center"><i class="fa-regular fa-circle-check text-primary fw-semibold" style="margin-right: 10px;"></i>Obnova međa</li>
+              </ul>
+            </div>
+        
+  
+          </div>
+        </div>
+        
+        </div>
+        </div>
+
+
+
+        
+
+
+
+    
 
     <!-- LEICA GEOSYSTEMS-->
 
@@ -409,6 +507,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 
+    </div>
+
+
+    <div class="container-md">
+      <h2 class="text-center mb-3">Naši Partneri:</h2>
+      <section class="splide border-top border-bottom border-white py-5" aria-label="Partneri">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/GK.webp" alt="Partner Grad Kutjevo"></li>
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/HAC.webp" alt="Partner Hrvatske Autoceste"></li>
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/HEP.webp" alt="Partner HEP"></li>
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/Rencon.webp" alt="Partner Rencon"></li>
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/RIEGL.webp" alt="Partner RIEGL"></li>
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/tmp2.webp" alt="Partner Termoplin Varaždin"></li>
+            <li class="splide__slide d-flex justify-content-center"><img style="max-height:100px;" src="image/partneri/4u2_logo.png" alt="Partner 4U2"></li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <div class="container-md mt-7 contact" id="kontakt">

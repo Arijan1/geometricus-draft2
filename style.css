@@ -122,13 +122,13 @@ body {
 
 /*USLUGE BG IMAGE*/
 
-.space-background-image {
-  background-image: url("image/space-background-image.png"),
+.background-image-usluge {
+  background-image: url("image/background-image-usluge-2.png"),
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   width: 100%;
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 100%;
 }
 
 /* LEICA GEOSYSTEMS BG */
@@ -185,3 +185,4 @@ body {
 .splide__arrow--prev{
   left: -5em !important;
 }
+

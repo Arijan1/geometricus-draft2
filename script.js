@@ -1,6 +1,21 @@
-var splide = new Splide(".splide", {
-  type: "loop",
-});
+AOS.init();
+
+
+var splide = new Splide( '.splide', {
+  perPage: 3,
+  rewind : true,
+  autoplay: true,
+  pagination: boolean = false,
+
+  breakpoints: {
+    1030: {
+      perPage: 2,
+    },
+    550: {
+      perPage: 1,
+    },
+  },
+} );
 
 splide.mount();
 var scroll = new SmoothScroll('a[href*="#"]', {
