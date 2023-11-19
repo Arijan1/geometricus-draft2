@@ -226,3 +226,39 @@ body {
   left: -5em !important;
 }
 
+
+
+/*ANIMACIJE ZA USLUGE*/
+
+.animate-right-to-left{
+  animation: right-to-left 2s forwards;
+}
+
+
+@keyframes right-to-left {
+  0%{
+    right: -1000px;
+  }
+  100%{
+    right: 100px;
+  }
+}
+.animate-left-to-right{
+  animation: left-to-right 2s forwards;
+}
+
+
+@keyframes left-to-right {
+  0%{
+    left: -1000px;
+  }
+  100%{
+    left: 100px;
+  }
+}
+
+/* TOP-0 ne pase za tekst AIR jer je previsoko */
+
+.top-margin{
+  top: 100px;
+}
