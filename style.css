@@ -124,7 +124,7 @@ body {
 
 .lidar-mapiranje-bg {
   background-image: url("image/background-images/lidar-mapiranje-bg.png"),
-    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ body {
 }
 .ortofoto-bg {
   background-image: url("image/background-images/orthophoto-background.jpg"),
-    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body {
 }
 .underground-bg {
   background-image: url("image/background-images/underground-mapiranje-bg.webp"),
-    linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -148,7 +148,7 @@ body {
 }
 .hidrografija-bg {
   background-image: url("image/background-images/multibeam-hydrography-bg.jpg"),
-    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -156,7 +156,7 @@ body {
 }
 .inzenjerska-geodezija-bg {
   background-image: url("image/background-images/inženjerska-geodezija-bg.webp"),
-    linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90));
+    linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -164,12 +164,16 @@ body {
 }
 .katastarske-usluge-bg {
   background-image: url("image/background-images/katastarske-usluge-bg.webp"),
-    linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97));
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* .pozadina-transparentnost{
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+} */
 
 /* LEICA GEOSYSTEMS BG */
 
