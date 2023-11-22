@@ -44,3 +44,22 @@ var splide = new Splide( '.splide', {
 
 splide.mount();
 
+// VIDEO SE PUSTA NA HOVER
+
+const videoContainers = document.querySelectorAll('.col-md-12.col-sm-12.position-relative');
+
+videoContainers.forEach(container => {
+  const video = container.querySelector('.video-hoverplay');
+  const playButton = container.querySelector('.play-button');
+
+  container.addEventListener('mouseenter', () => {
+    video.play();
+    playButton.style.display = "none";
+  });
+
+  container.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+    playButton.style.display = "block";
+  });
+});
