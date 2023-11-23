@@ -287,4 +287,39 @@ body {
 }
 
 
+/*HOVER STILOVI*/
+
+.btn-primary:hover{
+  color: #fff;
+  background-color: transparent;
+  border-color: var(--primary-color); 
+}
+
+
+.feature-box{
+  transition: all 0.1s;
+}
+.feature-box:hover{
+  background-color: #131111;
+}
+
+.kontakt-hover-info{
+  background-color: #fff;
+  transition: all 0.2s;
+}
+.kontakt-hover-info:hover{
+  background-color: #ebe4e4;
+  transform: translateY(-3px);
+}
+
+.footer-ikone{
+  color: var(--black-color);
+  transition: all 0.1s;
+}
+.footer-ikone:hover{
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+
 
