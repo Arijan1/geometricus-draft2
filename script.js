@@ -54,6 +54,10 @@ var splideIG = new Splide( '#splideIG', {
   arrows: boolean = false,
 
 } );
+
+
+splideIG.mount();
+
 var splideKU = new Splide( '#splideKU', {
   perPage: 1,
   rewind : true,
