@@ -44,6 +44,26 @@ var splide = new Splide( '.splide', {
 
 splide.mount();
 
+
+
+
+var splideIG = new Splide( '#splideIG', {
+  perPage: 1,
+  rewind : true,
+  autoplay: true,
+  arrows: boolean = false,
+
+} );
+var splideKU = new Splide( '#splideKU', {
+  perPage: 1,
+  rewind : true,
+  autoplay: true,
+  arrows: boolean = false,
+
+} );
+
+splideKU.mount();
+
 // VIDEO SE PUSTA NA HOVER
 
 const videoContainers = document.querySelectorAll('.col-md-12.col-sm-12.position-relative');
