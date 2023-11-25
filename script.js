@@ -26,11 +26,39 @@ menuBtn.addEventListener("click", pokazivanje),
   closeBtn.addEventListener("click", zatvaranje);
 
 
-var splide = new Splide( '.splide', {
+
+
+
+
+
+var splideIG = new Splide( '#splideIG', {
+  perPage: 1,
+  rewind : true,
+  autoplay: true,
+  arrows: false,
+
+} );
+
+
+splideIG.mount();
+
+var splideKU = new Splide( '#splideKU', {
+  perPage: 1,
+  rewind : true,
+  autoplay: true,
+  arrows: false,
+
+} );
+
+splideKU.mount();
+
+
+
+var splide = new Splide( '#partneri', {
   perPage: 3,
   rewind : true,
   autoplay: true,
-  pagination: boolean = false,
+  pagination: false,
 
   breakpoints: {
     1030: {
@@ -43,30 +71,6 @@ var splide = new Splide( '.splide', {
 } );
 
 splide.mount();
-
-
-
-
-var splideIG = new Splide( '#splideIG', {
-  perPage: 1,
-  rewind : true,
-  autoplay: true,
-  arrows: boolean = false,
-
-} );
-
-
-splideIG.mount();
-
-var splideKU = new Splide( '#splideKU', {
-  perPage: 1,
-  rewind : true,
-  autoplay: true,
-  arrows: boolean = false,
-
-} );
-
-splideKU.mount();
 
 // VIDEO SE PUSTA NA HOVER
 
