@@ -72,6 +72,9 @@ var splide = new Splide( '#partneri', {
 
 splide.mount();
 
+
+Cocoen.parse(document.body);
+
 // VIDEO SE PUSTA NA HOVER
 
 const videoContainers = document.querySelectorAll('.col-md-12.col-sm-12.position-relative');

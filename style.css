@@ -131,14 +131,24 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-/* .ortofoto-bg {
-  background-image: url("image/background-images/orthophoto-background.webp"),
+.ortofoto-bg {
+  background-image: url("image/background-images/rgb-bg.webp"),
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   width: 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.multispectral-bg {
+  background-image: url("image/background-images/multispectral-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*
 .underground-bg {
   background-image: url("image/background-images/underground-mapiranje-bg.webp"),
     linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
@@ -334,3 +344,10 @@ body {
   }
 } */
 
+
+
+/* ZA MOBILE DROPDOWN MENU*/
+
+.left-negative-margin{
+  left: -20px !important;
+}
