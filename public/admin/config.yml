@@ -12,7 +12,7 @@ collections:
     create: "true"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
      fields:
-     - {label: "Title", name: "title", widget: "string" }
+      - {label: "Title", name: "title", widget: "string" }
       - {label: "Description", name: "opis", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
