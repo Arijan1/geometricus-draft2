@@ -44,7 +44,7 @@ layout: 'base.njk'
         />
       </div>
 
-      <div class="container-md mt-5">
+      <div class="container-md mt-3 mt-md-0">
         <h2 class="fs-1 text-center text-uppercase">Novosti</h2>
        
         {%- for post in collections.featured | reverse -%}
@@ -62,7 +62,7 @@ layout: 'base.njk'
         </div>
       </div>
 
-      <div class="container-fluid mt-5 pt-5 pt-md-7 px-0">
+      <div class="container-fluid mt-5 pt-0 pt-md-7 px-0">
         <h2 class="fs-1 text-center text-uppercase" id="usluge">Usluge</h2>
         <p class="text-uppercase fs-5 my-4 text-secondary text-center">
           Što Nudimo
@@ -73,7 +73,7 @@ layout: 'base.njk'
         >
           <div class="container-md p-0">
             <h2 class="text-center mb-md-7 mb-lg-4 text-primary fw-semibold">
-              LiDAR Mapiranje
+              LiDAR mapiranje
             </h2>
             <div
               class="container d-flex mb-7 mt-md-7 mt-5 flex-column-reverse flex-lg-row align-items-center gap-4"
@@ -85,11 +85,20 @@ layout: 'base.njk'
               >
                 <div class="col-md-12">
                   <div class="row">
-                    <div class="col-md-12 col-sm-12 py-1">
+                    <div class="d-none d-sm-block col-md-12 col-sm-12 py-1">
                       <img
                         src="image/screen2.webp"
                         alt="LiDAR terenska mapa"
                         class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="d-sm-none col-md-12 col-sm-12 py-1">
+                      <img
+                        src="image/screen2-mob.webp"
+                        alt="LiDAR terenska mapa"
+                        class="img-fluid"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -99,11 +108,12 @@ layout: 'base.njk'
                         src="image/riegl-air-photo.webp"
                         alt="Riegl Drona"
                         class="img-fluid"
+                        loading="lazy"
                       />
                     </div>
                     <div class="col-md-6 col-sm-6 py-1">
                       <img src="image/lidar-terrain.webp"" alt="RIEGL Dron VUX
-                      Series LiDAR" class="img-fluid">
+                      Series LiDAR" class="img-fluid" loading="lazy">
                     </div>
                   </div>
                 </div>
@@ -161,6 +171,11 @@ layout: 'base.njk'
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
+              <h3
+              class="fs-1 fw-semibold border-bottom text-center mb-4 d-xxl-none"
+            >
+              TERESTRIČKO I MOBILNO SKENIRANJE
+            </h3>
                 <p>
                   Terestrički LiDAR se koristi za skeniranje unutrašnjosti
                   građevina, teško dostupnih područja i vanjskih fasada i
@@ -204,6 +219,7 @@ layout: 'base.njk'
                         src="image/pegasus-trk700-photo.webp"
                         alt="Pegasus TRK700 EVO Sustav za mobilno mapiranje"
                         class="img-fluid"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -258,11 +274,11 @@ layout: 'base.njk'
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <h3
+              <!-- <h3
                 class="fs-1 fw-semibold border-bottom text-center mb-4 d-xxl-none"
               >
                 PODZEMNO MAPIRANJE
-              </h3>
+              </h3> -->
               <p>
                 Ground Penetrating Radar (GPR) radi tako da radar šalje
                 pulseve različitih frekvencija u tlo i mjeri povrat
@@ -291,14 +307,12 @@ layout: 'base.njk'
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-12 col-sm-12 py-1">
-                    <video
-                      autoplay
-                      loop
-                      muted
-                      src="image/underground3.mp4"
-                      style="width: 100%"
-                      loading="lazy"
-                    ></video>
+                    <img
+                    src="image/underground3.gif"
+                    alt="Podzemno skeniranje"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
                   </div>
                 </div>
                 <div class="row">
@@ -307,11 +321,12 @@ layout: 'base.njk'
                       src="image/underground-scan.webp"
                       alt="Podzemno skeniranje"
                       class="img-fluid"
+                      loading="lazy"
                     />
                   </div>
                   <div class="col-md-6 col-sm-6 py-1">
                     <img src="image/underground-drone.webp"" alt="Dron za
-                    podzemno skeniranje" class="img-fluid">
+                    podzemno skeniranje" class="img-fluid" loading="lazy">
                   </div>
                 </div>
               </div>
@@ -594,14 +609,14 @@ layout: 'base.njk'
                     ></i
                     >Podloge za izvedbeni i glavni projekt
                   </li>
-                  <li>
+                  <li class="d-flex align-items-center">
                     <i
                       class="fa-regular fa-circle-check text-primary fw-semibold"
                       style="margin-right: 10px"
                     ></i
                     >Niskogradnja - ceste, autoceste, mostovi, tuneli, ...
                   </li>
-                  <li>
+                  <li class="d-flex align-items-center">
                     <i
                       class="fa-regular fa-circle-check text-primary fw-semibold"
                       style="margin-right: 10px"
@@ -609,7 +624,7 @@ layout: 'base.njk'
                     >Visokogradnja - zgrade, industrijska postrojenja, stadioni,
                     ...
                   </li>
-                  <li>
+                  <li class="d-flex align-items-center">
                     <i
                       class="fa-regular fa-circle-check text-primary fw-semibold"
                       style="margin-right: 10px"
@@ -937,7 +952,7 @@ layout: 'base.njk'
 
     </div> -->
 
-      <div class="container-md mt-5">
+      <div class="container-md mt">
         <h2 class="text-center fw-semibold mb-5">ISO CERTIFIKATI</h2>
         <div class="row">
           <!-- ISO 9001:2015 -->
