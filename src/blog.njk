@@ -1,0 +1,89 @@
+---
+title: blog
+layout: 'base.njk'
+---
+  
+
+<div class="container-md mt-7">
+    <h1 class="text-center">Sve Obavijesti</h1>
+
+    <ul role="list" class="row mt-5 list-unstyled">
+
+        {%- for post in collections.post | reverse -%}
+
+            {% include 'article-snippet.njk' %}
+
+        {% endfor %}
+
+
+
+    </ul>
+
+</div>
+
+
+<!-- 
+        <div class="container-md mt-7">
+            <div class="row mb-md-5">
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">Rok za dostavu dokumentacije - Kutina</h3>
+                            <div class="mb-1">May 12, 2023</div>
+                            <p class="card-text mb-auto">Krajnji rok za dostavu dokumentacije o zgradama u Kutini - 02.06</p>
+                            <a href="/../articles/rok-za-dostavu-dokumentacije/" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">SNIMANJE ZGRADA - HERCEGOVAC I KUTINA ISTOK</h3>
+                            <div class="mb-1">Jun 5, 2023</div>
+                            <p class="mb-auto">Obavijest o snimanju zgrada za KO Hercegovac i KO Kutina Istok</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">Rok za dostavu dokumentacije - Kutina</h3>
+                            <div class="mb-1">May 12, 2023</div>
+                            <p class="card-text mb-auto">Krajnji rok za dostavu dokumentacije o zgradama u Kutini - 02.06</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">SNIMANJE ZGRADA - HERCEGOVAC I KUTINA ISTOK</h3>
+                            <div class="mb-1">Jun 5, 2023</div>
+                            <p class="mb-auto">Obavijest o snimanju zgrada za KO Hercegovac i KO Kutina Istok</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+
+    <div class="col mt-5">
+        <div
+          class="row g-0 border rounded flex-md-row mb-4 position-relative d-flex justify-content-center"
+        >
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="{{ post.data.image }}"
+              alt="{{ post.data.imageAlt }}"
+              class="w-100"
+            />
+          </div>
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary"
+              >{{ post.data.autor }}</strong
+            >
+            <h3 class="mb-0">Rok za dostavu dokumentacije - Kutina</h3>
+            <div class="mb-1">{{ post.date | postDate }}</div>
+            <p class="card-text mb-auto">
+              {{ post.data.opis }}
+            </p>
+            <a href="{{ post.url }}" class="stretched-link">Pročitaj cijelu obavijest</a>
+          </div>
+        </div>
+      </div>

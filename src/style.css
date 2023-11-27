@@ -1,0 +1,353 @@
+:root {
+  --primary-color: #ffc000;
+  --secondary-color: rgb(172, 46, 70);
+  --overlay-color: #ffc000;
+  --light-color: #f3f3f3;
+  --white-color: #ffffff;
+  --black-color: #000;
+  --dark-color: #333;
+  --darkishlightcolor: rgb(77, 77, 77);
+  --max-width: 1300px;
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+  --primary-font: "Blinker", Arial, sans-serif;
+  --secondary-font: "Saira", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+}
+p,
+span,
+a,
+li {
+  font-family: var(--secondary-font);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--black-color);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+
+/*NAVIGATION */
+
+.nav-link {
+  color: var(--white-color);
+}
+.nav-link:hover {
+  color: var(--primary-color);
+}
+/*responzivni logo da stane hamburger kraj njega */
+.navbar-brand img {
+  max-height: 70px;
+  max-width: 100%;
+}
+@media (max-width: 400px) {
+  .navbar-brand img {
+    max-height: 50px;
+  }
+}
+
+/*OVERLAY za mobilnu navigaciju*/
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  visibility: hidden;
+  transition: 0.2s;
+  backdrop-filter: blur(10px);
+}
+.overlay-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*MOBILNA NAV LISTA*/
+
+#navigationLista {
+  flex-direction: column;
+  display: none;
+  width: auto;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  font-size: 1.6rem;
+  list-style-type: none;
+  gap: 1em;
+  color: #000;
+  position: fixed;
+  padding-inline: 100px;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+}
+#navigationLista a {
+  color: var(--black-color);
+}
+.menu-btn,
+.close-btn {
+  z-index: 10001; /* da budu iznad liste*/
+  display: none;
+}
+.close-btn {
+  position: fixed; /* Da se X button mice s navigacijom pri skrolanju */
+  right: 0;
+}
+.close-btn i {
+  color: var(--black-color);
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+/*USLUGE BG IMAGE*/
+
+.lidar-mapiranje-bg {
+  background-image: url("image/background-images/lidar-mapiranje-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.ortofoto-bg {
+  background-image: url("image/background-images/rgb-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.multispectral-bg {
+  background-image: url("image/background-images/multispectral-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*
+.underground-bg {
+  background-image: url("image/background-images/underground-mapiranje-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hidrografija-bg {
+  background-image: url("image/background-images/multibeam-hydrography-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inzenjerska-geodezija-bg {
+  background-image: url("image/background-images/inženjerska-geodezija-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.katastarske-usluge-bg {
+  background-image: url("image/background-images/katastarske-usluge-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* .pozadina-transparentnost{
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+} */
+
+/* LEICA GEOSYSTEMS BG */
+
+.leica-bg {
+  background-image: url("image/background-images/leica-geosystems-bg.webp"),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  width: 100%;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-position: 60% 40%;
+}
+
+/*H2 od Leica Geosystems, pisano u custom cssu zbog manjka mogucnosti s klasama */
+.leica-naslov {
+  width: 50%;
+}
+@media (max-width: 768px) {
+
+  .leica-naslov {
+    width: 90%;
+  }
+}
+
+
+
+
+/*H2 od dropdown slidera */
+.slider-naslov {
+  font-size: 2.5rem;
+}
+@media (max-width: 992px) {
+
+  .slider-naslov{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+
+  .slider-naslov{
+    font-size: 1.2rem;
+  }
+}
+
+
+
+/*SPLIDE ARROW CUSTOM CSS*/
+
+.splide__arrow--next{
+  right: -5em !important;
+}
+.splide__arrow--prev{
+  left: -5em !important;
+}
+
+
+
+/*ANIMACIJE ZA USLUGE*/
+
+.animate-right-to-left{
+  animation: right-to-left 2s forwards;
+}
+
+
+@keyframes right-to-left {
+  0%{
+    right: -1000px;
+  }
+  100%{
+    right: 100px;
+  }
+}
+.animate-left-to-right{
+  animation: left-to-right 2s forwards;
+}
+
+
+@keyframes left-to-right {
+  0%{
+    left: -1000px;
+  }
+  100%{
+    left: 100px;
+  }
+}
+
+/* TOP-0 ne pase za tekst AIR jer je previsoko */
+
+.top-margin{
+  top: 100px;
+}
+
+/* WIDTH ZA USLUGE */
+
+.width-50{
+  width: 50%;
+}
+.width-75{
+  width: 75%;
+}
+
+@media (max-width: 992px) {
+  .width-50{
+    width: 100%;
+  }
+  .width-75{
+    width: 100%;
+  }
+}
+
+
+/*HOVER STILOVI*/
+
+.btn-primary:hover{
+  color: #fff;
+  background-color: transparent;
+  border-color: var(--primary-color); 
+}
+
+
+.feature-box{
+  transition: all 0.1s;
+}
+.feature-box:hover{
+  background-color: #131111;
+}
+
+.kontakt-hover-info{
+  background-color: #fff;
+  transition: all 0.2s;
+}
+.kontakt-hover-info:hover{
+  background-color: #ebe4e4;
+  transform: translateY(-3px);
+}
+
+.footer-ikone{
+  color: var(--black-color);
+  transition: all 0.1s;
+}
+.footer-ikone:hover{
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+
+
+/* FONT SIZE USLUGA RESPONSIVENESS*/
+
+/* .usluge-text{
+  font-size: 1.2rem;
+}
+@media (max-width: 1320px){
+  .usluge-text{
+    font-size: 1rem;
+  }
+} */
+
+
+
+/* ZA MOBILE DROPDOWN MENU*/
+
+.left-negative-margin{
+  left: -20px !important;
+}

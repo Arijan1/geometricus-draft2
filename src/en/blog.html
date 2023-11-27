@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/32c0f3b9ec.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      <!--faviconIcon-->
+  <link rel="shortcut icon" href="../image/favicon/favicon.ico" type="image/x-icon">
+
+     <!--ANIMATE ON SCROLL-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--META TAGS-->
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <meta name="description"
+        content="Geometricus d.o.o News - Sharing expert knowledge, the latest innovations, projects, and updates in geodesy.">
+    <!--OPEN GRAPH-->
+    <meta property="og:title" content="Geometricus d.o.o - News" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://geometricus.hr/" />
+    <meta property="og:image" content="" /> <!--TREBA DODAT KAD SE UPLOADA-->
+    <meta property="og:description"
+        content="Geometricus d.o.o News - Sharing expert knowledge, the latest innovations, projects, and updates in geodesy.">
+    <!--Twitter card oznake, treba dodat kad se uploada + ako se bude radio Twitter nekad u buducnosti-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Geometricus d.o.o - News">
+    <meta name="twitter:description"
+        content="Geometricus d.o.o News - Sharing expert knowledge, the latest innovations, projects, and updates in geodesy.">
+    <title>Geometricus d.o.o - News</title>
+</head>
+
+<body>
+    <nav class="container-md navbar navbar-expand-md mx-auto justify-content-between">
+        <a id="nav-logo" class="navbar-brand" href="index.html"><img src="../image/geometricus-logo-transparent-white.webp"
+                alt="Geometricus Logo" /></a>
+                <div class="text-uppercase d-none d-md-block">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html#usluge">Services</a>
+                        </li>
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+                                <a class="dropdown-item" href="hydrographboost.html">HydroGraphBoost</a>
+                                <a class="dropdown-item" href="spatialsupervision.html">SpatialSuperVision</a>
+                                <a class="dropdown-item" href="eu-petrinja.html">KK.08.2.1.16.0149</a>
+                            </div>
+                        </li>
+                
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="blog.html">News</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="index.html#kontakt">Contact</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../blog.html">HR
+                                <img src="../image/croatia-flag.webp" alt="Hrvatska Zastava" style="max-height: 20px" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">ENG
+                                <img src="../image/england-flag.webp" alt="UK Zastava" style="max-height: 20px" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+        <div class="menu-btn fs-1 mx-3 mx-sm-5">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="close-btn fs-1 mx-3 mx-sm-5">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+        <ul id="navigationLista">
+            <li><a href="index.html#usluge">Services</a></li>
+            <li class="dropdown" data-bs-theme="dark">
+                <a class="dropdown-toggle" href="#" id="projektiDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="projektiDropdown">
+                    <a class="dropdown-item text-light" href="hydrographboost.html">HydroGraphBoost</a>
+                    <a class="dropdown-item text-light" href="spatialsupervision.html">SpatialSuperVision</a>
+                    <a class="dropdown-item text-light" href="eu-petrinja.html">KK.08.2.1.16.0149</a>
+                </div>
+            </li>
+            <li><a href="blog.html">News</a></li>
+            <li><a href="index.html#kontakt">Contact</a></li>
+            <li>
+                <a href="../blog.html">HR
+                    <img src="../image/croatia-flag.webp" alt="Croatia Flag" style="max-height: 20px" /></a>
+            </li>
+            <li>
+                <a href="blog.html">ENG
+                    <img src="../image/england-flag.webp" alt="UK Flag" style="max-height: 20px" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+
+        <div class="container-md mt-7">
+            <div class="row mb-md-5">
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">Rok za dostavu dokumentacije - Kutina</h3>
+                            <div class="mb-1">May 12, 2023</div>
+                            <p class="card-text mb-auto">Krajnji rok za dostavu dokumentacije o zgradama u Kutini - 02.06</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">SNIMANJE ZGRADA - HERCEGOVAC I KUTINA ISTOK</h3>
+                            <div class="mb-1">Jun 5, 2023</div>
+                            <p class="mb-auto">Obavijest o snimanju zgrada za KO Hercegovac i KO Kutina Istok</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">Rok za dostavu dokumentacije - Kutina</h3>
+                            <div class="mb-1">May 12, 2023</div>
+                            <p class="card-text mb-auto">Krajnji rok za dostavu dokumentacije o zgradama u Kutini - 02.06</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm position-relative flex-column">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2 text-primary">info@geometricus.hr</strong>
+                            <h3 class="mb-0 fw-semibold">SNIMANJE ZGRADA - HERCEGOVAC I KUTINA ISTOK</h3>
+                            <div class="mb-1">Jun 5, 2023</div>
+                            <p class="mb-auto">Obavijest o snimanju zgrada za KO Hercegovac i KO Kutina Istok</p>
+                            <a href="#" class="stretched-link">Pročitaj cijelu obavijest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container-md mt-5 p-0">
+          <footer class="text-lg-start bg-white">
+            <div class="container-fluid p-4">
+              <div class="row mt-0 mt-lg-4">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 text-black">
+                  <h5 class="text-uppercase">Geometricus d.o.o</h5>
+                  <div class="d-flex gap-3 mb-4">
+                    <a href="#"
+                      ><i class="footer-ikone fs-5 fa-brands fa-facebook"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="footer-ikone fs-5 fa-brands fa-instagram"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="footer-ikone fs-5 fa-brands fa-linkedin"></i
+                    ></a>
+                  </div>
+  
+                  <p class="text-black">
+                    Over the years, we have constantly improved our approach to
+                    clients. Our team currently consists of 8 geodetic engineers
+                    and 3 professional associates. All employees have passed the
+                    A1/A2/A3 open category for conducting flight operations in
+                    Europe.
+                  </p>
+  
+                  <p class="text-black">
+                    With our experience, reliability, high quality, and prompt
+                    delivery of the final product, we believe we belong to the top
+                    geodetic companies in the country.
+                  </p>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <ul class="fa-ul" style="margin-left: 1.65em">
+                    <li class="mb-3 d-flex flex-column justify-content-center">
+                      <span class="fa-li fs-5"
+                        ><i class="fa-solid fa-building text-black"></i
+                      ></span>
+                      <span class="fs-5 text-black">Headquarters</span>
+                      <p class="text-black mb-0">Ferovac 32, 34340 Kutjevo</p>
+                      <p class="text-black">
+                        <span class="fw-semibold text-black">OIB:</span>
+                        28104778956
+                      </p>
+                    </li>
+                    <li class="mb-3 flex-column justify-content-center">
+                      <span class="fa-li fs-5"
+                        ><i class="fas fa-home text-black"></i
+                      ></span>
+                      <span class="fs-5 text-black">Office Požega</span>
+                      <p class="text-black mb-0">Županijska 4, 34000 Požega</p>
+                    </li>
+                    <li class="mb-3 flex-column justify-content-center">
+                      <span class="fa-li fs-5"
+                        ><i class="fas fa-home text-black"></i
+                      ></span>
+                      <span class="fs-5 text-black">Office Zagreb</span>
+                      <p class="text-black mb-0">
+                        Odra, Odranska ulica 62, 10020 Novi Zagreb
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-2 text-black">Working Hours</h5>
+  
+                  <table class="table">
+                    <tbody class="font-weight-normal">
+                      <tr>
+                        <td>Mon - Fri:</td>
+                        <td>07 - 15h</td>
+                      </tr>
+                    </tbody>
+                  </table>
+  
+                  <h5 class="text-uppercase mb-2 text-black">
+                    Authorized Persons
+                  </h5>
+                  <p class="text-black mb-0">
+                    <span class="fw-semibold text-black">Owner:</span> Stjepan
+                    Keleminec
+                  </p>
+                  <p class="text-black">
+                    <span class="fw-semibold text-black">Director:</span> David
+                    Perešin
+                  </p>
+  
+                  <h5 class="text-uppercase mb-2 text-black">INFO</h5>
+                  <p class="text-black mb-0">
+                    <span class="fw-semibold text-black">Email:</span>
+                    info@geometricus.hr
+                  </p>
+                  <p class="text-black mb-0">
+                    <span class="fw-semibold text-black">Contact Number:</span>
+                    +385995461424, <br />Stjepan Keleminec
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div
+              class="text-center p-3"
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              © 2023 Copyright:
+              <a class="text-white" href="https://geometricus.hr/"
+                >Geometricus d.o.o</a
+              >
+            </div>
+            <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+              <small class="text-muted"
+                >Made by:
+                <a
+                  class="text-black"
+                  href="https://www.linkedin.com/in/arijanjanes/"
+                  >Arijan Janeš</a
+                ></small
+              >
+            </div>
+          </footer>
+        </div>
+          <!-- End of .container -->
+    </main>
+    <!--Overlay kad se klikne navigation bar na mobitelu-->
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

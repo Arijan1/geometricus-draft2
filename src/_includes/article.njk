@@ -1,0 +1,16 @@
+---
+layout: 'base.njk'
+---
+
+
+<div class="container-md mt-5">
+    <h1 class="text-center mb-3">{{ title }}</h1>
+    <figure>
+    <img class="w-100" src="{{ image }}" alt="{{ imageAlt }}">
+    <figcaption class="text-center">
+        {{ imageAlt }}
+    </figcaption>
+</figure>
+    {{ content | safe }}
+</div>
+

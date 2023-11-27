@@ -1,0 +1,31 @@
+$primary: #FFC000;
+$gray: #D5D5D5;
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+);
+
+$font-size-base:              1rem; 
+$h1-font-size:                $font-size-base * 3.5;
+$h2-font-size:                $font-size-base * 2.5;
+$h3-font-size:                $font-size-base * 2;
+$h4-font-size:                $font-size-base * 1.75;
+$h5-font-size:                $font-size-base * 1.5;
+$h6-font-size:                $font-size-base;
+
+
+
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
+
