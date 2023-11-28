@@ -5,7 +5,6 @@ author: info@geometricus.hr
 date: '2023-10-26T20:56:56+02:00'
 tags:
   - post
-  - featured
 image: /image/blog/333.png
 imageAlt: Innovation Norway
 ---
