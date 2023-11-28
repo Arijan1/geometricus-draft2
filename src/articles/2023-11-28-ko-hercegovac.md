@@ -5,6 +5,7 @@ author: info@geometricus.hr
 date: '2023-03-10T15:21:46+01:00'
 tags:
   - post
+  - featured
 image: /image/blog/pregledna_hercegovac_g13-1.webp
 imageAlt: Državna izmjera KO Hercegovac
 ---
