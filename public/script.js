@@ -80,17 +80,20 @@ Cocoen.parse(document.body);
 const videoContainers = document.querySelectorAll('.col-md-12.col-sm-12.position-relative');
 
 videoContainers.forEach(container => {
-  const video = container.querySelector('.video-hoverplay');
-  const playButton = container.querySelector('.play-button');
+    const video = container.querySelector('.video-hoverplay');
+    const playButton = container.querySelector('.play-button');
 
-  container.addEventListener('mouseenter', () => {
-    video.play();
-    playButton.style.display = "none";
-  });
+    if (video) {
+        container.addEventListener('mouseenter', () => {
+            video.play();
+            if (playButton) playButton.style.display = "none";
+        });
 
-  container.addEventListener('mouseleave', () => {
-    video.pause();
-    video.currentTime = 0;
-    playButton.style.display = "block";
-  });
+        container.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+            if (playButton) playButton.style.display = "block";
+        });
+    }
 });
+
