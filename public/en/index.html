@@ -508,14 +508,33 @@ class="container-md navbar navbar-expand-md mx-auto justify-content-between"
               >
                 <div class="col-md-12">
                   <div class="row">
-                    <div class="col-md-12 col-sm-12 py-1">
-                      <img
-                        src="../image/underground3.gif"
-                        alt="Underground Mapping"
-                        class="img-fluid"
-                        loading="lazy"
-                      />
-                    </div>
+                    <div
+                  class="d-none d-md-block col-md-12 col-sm-12 position-relative container-hover-video"
+                >
+                  <video
+                    class="video-hoverplay"
+                    loop
+                    muted
+                    src="/image/underground3.mp4"
+                    style="width: 100%"
+                    loading="lazy"
+                  ></video>
+                  <i
+                    class="fa-solid fa-play position-absolute top-50 end-50 fs-1 text-primary play-button"
+                  ></i>
+                </div>
+                <div
+                class="d-md-none col-md-12 col-sm-12 position-relative"
+              >
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="/image/underground3.mp4"
+                  style="width: 100%"
+                  loading="lazy"
+                ></video>
+              </div>
                   </div>
                   <div class="row">
                     <div class="col-md-6 col-sm-6 py-1">
@@ -559,22 +578,21 @@ class="container-md navbar navbar-expand-md mx-auto justify-content-between"
                   <div class="row">
                     <div class="col-md-12 col-sm-12">
                       <img
-                        loading="lazy"
-                        src="../image/ortho2.webp"
-                        alt="Orthophoto image"
+                        src="/image/ortho2.webp"
+                        alt="Ortophoto image"
                         class="img-fluid"
                       />
                     </div>
                   </div>
                   <div class="row">
                     <div
-                      class="d-none d-md-block col-md-12 col-sm-12 position-relative"
+                      class="d-none d-md-block col-md-6 col-sm-6 position-relative container-hover-video"
                     >
                       <video
                         class="video-hoverplay"
                         loop
                         muted
-                        src="../image/driving-terrain-scan.mp4"
+                        src="/image/driving-terrain-scan.mp4"
                         style="width: 100%"
                         loading="lazy"
                       ></video>
@@ -583,46 +601,45 @@ class="container-md navbar navbar-expand-md mx-auto justify-content-between"
                       ></i>
                     </div>
                     <div
-                      class="d-md-none col-md-12 col-sm-12 position-relative"
+                      class="d-md-none col-md-6 col-sm-6 position-relative"
                     >
                       <video
                         autoplay
                         loop
                         muted
-                        src="../image/driving-terrain-scan.mp4"
+                        src="/image/driving-terrain-scan.mp4"
                         style="width: 100%"
                         loading="lazy"
                       ></video>
                     </div>
+  
+                    <div
+                    class="d-none d-md-block col-md-6 col-sm-6 position-relative container-hover-video"
+                  >
+                    <video
+                      class="video-hoverplay"
+                      loop
+                      muted
+                      src="/image/360-scan.mp4"
+                      style="width: 100%"
+                      loading="lazy"
+                    ></video>
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 end-50 fs-1 text-primary play-button"
+                    ></i>
                   </div>
-                  <div class="row">
-                    <div
-                      class="d-none d-md-block col-md-12 col-sm-12 position-relative"
-                    >
-                      <video
-                        class="video-hoverplay"
-                        loop
-                        muted
-                        src="../image/360-scan.mp4"
-                        style="width: 100%"
-                        loading="lazy"
-                      ></video>
-                      <i
-                        class="fa-solid fa-play position-absolute top-50 end-50 fs-1 text-primary play-button"
-                      ></i>
-                    </div>
-                    <div
-                      class="d-md-none col-md-12 col-sm-12 position-relative"
-                    >
-                      <video
-                        autoplay
-                        loop
-                        muted
-                        src="../image/360-scan.mp4"
-                        style="width: 100%"
-                        loading="lazy"
-                      ></video>
-                    </div>
+                  <div
+                    class="d-md-none col-md-6 col-sm-6 position-relative"
+                  >
+                    <video
+                      autoplay
+                      loop
+                      muted
+                      src="/image/360-scan.mp4"
+                      style="width: 100%"
+                      loading="lazy"
+                    ></video>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -673,50 +690,71 @@ class="container-md navbar navbar-expand-md mx-auto justify-content-between"
             <div
               class="container d-flex mb-md-7 mt-md-7 mt-5 flex-column-reverse flex-lg-column align-items-center gap-4"
             >
-              <div
-                class="image-wrap w-100 bg-black"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div class="cocoen">
-                  <img
-                    loading="lazy"
-                    src="../image/river-rgb.webp"
-                    alt="River RGB"
-                  />
-                  <img
-                    loading="lazy"
-                    src="../image/river-cir.webp"
-                    alt="River CIR"
-                  />
-                </div>
+            <div
+            class="image-wrap w-100"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
 
-                <div class="col-md-12">
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12 py-1 d-flex justify-content-center">
-                      <img
-                      src="../image/thermal-zoom.png"
-                      alt="H20T Thermal Zoom Dual Mode"
-                      class="img-fluid"
-                      loading="lazy"
-                    />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 py-1">
-                      <img
-                        src="../image/multispectral-drone.gif"
-                        alt="Multispectral Drone"
-                        class="img-fluid"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="col-md-6 col-sm-6 py-1">
-                      <img src="../image/multispectral-tablet.gif"" alt="Multispectral Animation" class="img-fluid" loading="lazy">
-                    </div>
-                  </div>
-                </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-sm-6 d-flex align-items-center justify-content-center">
+          <div class="cocoen">
+            <img src="/image/river-rgb.webp" alt="River RGB" />
+            <img src="/image/river-cir.webp" alt="River CIR" />
+          </div>
+        </div>
+          <div class="col-sm-6 d-flex justify-content-center">
+            <img
+            src="/image/thermal-zoom-nobg.png"
+            alt="H20T Thermal Zoom Dual Mode"
+            class="img-fluid"
+            loading="lazy"
+          />
+          </div>
+        </div>
+        </div>
+           
+    
+          <div class="col-md-12">
+            <div class="row">
+             
+            </div>
+            <div class="row">
+              <div
+              class="d-none d-md-block col-md-6 col-sm-6 position-relative container-hover-video"
+            >
+              <video
+                class="video-hoverplay"
+                loop
+                muted
+                src="/image/multispectral-drone.mp4"
+                style="width: 100%"
+                loading="lazy"
+              ></video>
+              <i
+                class="fa-solid fa-play position-absolute top-50 end-50 fs-1 text-primary play-button"
+              ></i>
+            </div>
+              <div
+              class="d-md-none col-md-6 col-sm-6 position-relative"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                src="/image/multispectral-drone.mp4"
+                style="width: 100%"
+                loading="lazy"
+              ></video>
+            </div>
+              <div class="col-md-6 col-sm-6 py-1">
+                <img src="/image/multispectral-tablet.gif"" alt="Multispectral Animation" class="img-fluid" loading="lazy">
               </div>
+            </div>
+          </div>
+
+          </div>
               <div class="w-100" data-aos="fade-left" data-aos-duration="1000">
                 <p>
                   Using advanced inspection systems mounted on unmanned aerial
